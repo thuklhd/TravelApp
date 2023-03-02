@@ -1,0 +1,40 @@
+class AssetHelper{
+  static const String imageBackgroundSplash='assets/images/background_splash.png';
+  static const String imageCircleSplash='assets/images/Group_circle_splash.png';
+  static const String intro1='assets/images/intro1.png';
+  static const String intro2='assets/images/intro2.png';
+  static const String intro3='assets/images/intro3.png';
+  static const String oval='assets/images/oval.png';
+  static const String oval2='assets/images/oval2.png';
+  static const String person='assets/images/person.png';
+  static const String hotel='assets/images/hotel_icon.png';
+  static const String airplane='assets/images/air_plane_icon.png';
+  static const String planeandhotelicon='assets/images/plane_hotel_icon.png';
+  static const String location='assets/icons/location_icon.png';
+  static const String calender='assets/icons/calender.png';
+  static const String caricon='assets/icons/caricon.png';
+  static const String redcar='assets/icons/redcar.png';
+  static const String plus='assets/icons/plus.png';
+  static const String minus='assets/icons/minus.png';
+  static const String peoples='assets/icons/peoplesicon.png';
+  static const String iconstar='assets/icons/iconstar.png';
+  static const String hotel1='assets/images/hotel1.png';
+  static const String hotel2='assets/images/hotel2.png';
+  static const String hotel3='assets/images/hotel3.png';
+  static const String map='assets/images/map.png';
+  static const String wifi='assets/images/wifi.png';
+  static const String nonRefund='assets/icons/nonRefound.png';
+  static const String nonSmoking='assets/icons/nonSmoking.png';
+  static const String breakfirst='assets/icons/breakfirst.png';
+  static const String room1='assets/images/room1.png';
+  static const String room2='assets/images/room2.png';
+  static const String room3='assets/images/room3.png';
+  static const String hotelScreen='assets/images/hotelScreen.png';
+  static const String icons1='assets/icons/icons1.png';
+  static const String percent='assets/icons/percent.png';
+  static const String korea='assets/images/korea.png';
+  static const String japan='assets/images/japan.png';
+  static const String dubai='assets/images/dubai.png';
+  static const String turkey='assets/images/turkey.png';
+
+}
