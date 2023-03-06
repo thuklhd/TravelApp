@@ -163,7 +163,7 @@ class _DetailHotelScreenState extends State<DetailHotelScreen> {
                               Row(
                                 children: [
                                   ImageHelper.loadFromAsset(
-                                    AssetHelper.iconstar,
+                                    AssetHelper.iconStar,
                                   ),
                                   SizedBox(
                                     width: kMinPadding,
@@ -190,7 +190,7 @@ class _DetailHotelScreenState extends State<DetailHotelScreen> {
                               SizedBox(
                                 height: kDefaultPadding,
                               ),
-                              Text(
+                              const Text(
                                 '''You will find every comfort because many of the services that the hotel offers for travellers and of course the hotel is very comfortable.''',
                               ),
                               ItemUtilityHotelWidget(),

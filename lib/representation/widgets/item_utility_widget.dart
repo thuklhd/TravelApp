@@ -10,7 +10,7 @@ class ItemUtilityHotelWidget extends StatelessWidget {
   static const List<Map<String, String>> listUtilityHotel = [
     {'icon': AssetHelper.wifi, 'name': 'Free\nWifi'},
     {'icon': AssetHelper.nonRefund, 'name': 'Non-\nRefundable'},
-    {'icon': AssetHelper.breakfirst, 'name': 'Free-\nBreakfast'},
+    {'icon': AssetHelper.breakFast, 'name': 'Free-\nBreakfast'},
     {'icon': AssetHelper.nonSmoking, 'name': 'Non-\nSmoking'},
   ];
 

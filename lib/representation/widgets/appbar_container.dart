@@ -43,13 +43,13 @@ class AppBarContainer extends StatelessWidget {
                             Navigator.of(context).pop();
                           },
                           child: Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.all(
                                   Radius.circular(kDefaultPadding)),
                               color: Colors.white,
                             ),
                             padding: EdgeInsets.all(kItemPadding),
-                            child: Icon(
+                            child: const Icon(
                               FontAwesomeIcons.arrowLeft,
                               color: Colors.black,
                               size: kDefaultIconSize,

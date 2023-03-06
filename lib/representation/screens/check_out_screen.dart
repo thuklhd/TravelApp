@@ -31,7 +31,7 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
 
   Widget _buildItemOptionsCheckout(String icon, String title, String value) {
     return Container(
-      padding: EdgeInsets.all(kDefaultPadding),
+      padding: const EdgeInsets.all(kDefaultPadding),
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(kDefaultPadding)),
@@ -43,7 +43,7 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
               ImageHelper.loadFromAsset(
                 icon,
               ),
-              SizedBox(
+              const SizedBox(
                 width: kDefaultPadding,
               ),
               Text(
@@ -52,7 +52,7 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: kMediumPadding,
           ),
           Container(
@@ -63,7 +63,7 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
                 40,
               ),
             ),
-            padding: EdgeInsets.all(kMinPadding),
+            padding: const EdgeInsets.all(kMinPadding),
             child: Row(
               children: [
                 Container(
@@ -74,11 +74,11 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
                     color: Colors.white,
                   ),
                   alignment: Alignment.center,
-                  child: Icon(
+                  child: const Icon(
                     Icons.add,
                   ),
                 ),
-                SizedBox(width: kDefaultPadding),
+                const SizedBox(width: kDefaultPadding),
                 Text(
                   value,
                   style: TextStyles.defaultStyle.primaryTextColor.bold,
@@ -114,16 +114,16 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: kMinPadding,
         ),
         Text(nameStep,
             style: TextStyles.defaultStyle.fontCaption.whiteTextColor),
-        SizedBox(
+        const SizedBox(
           width: kMinPadding,
         ),
         if (!isEnd)
-          SizedBox(
+          const SizedBox(
             width: kDefaultPadding,
             child: Divider(
               height: 1,
@@ -132,7 +132,7 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
             ),
           ),
         if (!isEnd)
-          SizedBox(
+          const SizedBox(
             width: kMinPadding,
           ),
       ],
@@ -154,25 +154,25 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
                     steps.indexOf(e) == 0))
                 .toList(),
           ),
-          SizedBox(
+          const SizedBox(
             height: kMinPadding,
           ),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: kMediumPadding,
                   ),
                   ItemRoomWidget(roomModel: widget.roomModel, numberOfRoom: 1),
                   _buildItemOptionsCheckout(
                       AssetHelper.location, 'Contact Details', 'Add Contact'),
-                  SizedBox(
+                  const SizedBox(
                     height: kMediumPadding,
                   ),
                   _buildItemOptionsCheckout(
                       AssetHelper.percent, 'Promo Code', 'Add Promo Code'),
-                  SizedBox(
+                  const SizedBox(
                     height: kMediumPadding,
                   ),
                   ButtonWidget(
@@ -182,7 +182,7 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
                           (route) => route.settings.name == MainApp.routerName);
                     },
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: kMediumPadding,
                   ),
                 ],

@@ -40,7 +40,7 @@ class _HotelBookingScreenState extends State<HotelBookingScreen> {
               decription: "South Korea",
               onTap: () {},
             ),
-            SizedBox(
+            const SizedBox(
               height: kMediumPadding / 1.5,
             ),
             StatefulBuilder(
@@ -62,11 +62,11 @@ class _HotelBookingScreenState extends State<HotelBookingScreen> {
                 );
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: kMediumPadding / 1.5,
             ),
             ItemBookingWidget(
-              icon: AssetHelper.caricon,
+              icon: AssetHelper.carIcon,
               title: 'Guest and Room',
               decription: guestAndRoom ?? 'Guest and room',
               onTap: () async {
@@ -79,7 +79,7 @@ class _HotelBookingScreenState extends State<HotelBookingScreen> {
                 }
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: kMediumPadding / 1.5,
             ),
             ButtonWidget(

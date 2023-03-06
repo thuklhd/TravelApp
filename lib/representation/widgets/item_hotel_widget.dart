@@ -71,7 +71,7 @@ class ItemHotelWidget extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    ImageHelper.loadFromAsset(AssetHelper.iconstar),
+                    ImageHelper.loadFromAsset(AssetHelper.iconStar),
                     SizedBox(
                       width: kMediumPadding,
                     ),

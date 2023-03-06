@@ -27,7 +27,7 @@ class ItemRoomWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(kMediumPadding),
         color: Colors.white,
       ),
-      margin: EdgeInsets.only(bottom: kMediumPadding),
+      margin: const EdgeInsets.only(bottom: kMediumPadding),
       padding: const EdgeInsets.all(kDefaultPadding),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,14 +44,14 @@ class ItemRoomWidget extends StatelessWidget {
                       roomModel.roomName,
                       style: TextStyles.defaultStyle.fontHeader.bold,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: kDefaultPadding,
                     ),
                     Text(
                       'Room Size: ${roomModel.size} m2',
                       maxLines: 2,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: kDefaultPadding,
                     ),
                     Text(
@@ -79,7 +79,7 @@ class ItemRoomWidget extends StatelessWidget {
                       '\$${roomModel.price.toString()}',
                       style: TextStyles.defaultStyle.fontHeader.bold,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: kMinPadding,
                     ),
                     Text(

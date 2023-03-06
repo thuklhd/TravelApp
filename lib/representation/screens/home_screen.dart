@@ -46,13 +46,13 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           Container(
             width: double.infinity,
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               vertical: kMediumPadding,
             ),
-            child: icon,
             decoration: BoxDecoration(color: color.withOpacity(0.2), borderRadius: BorderRadius.circular(kItemPadding)),
+            child: icon,
           ),
-          SizedBox(
+          const SizedBox(
             height: kItemPadding,
           ),
           Text(title)
@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Navigator.of(context).pushNamed(HotelBookingScreen.routeName, arguments: name);
       },
       child: Container(
-        margin: EdgeInsets.only(bottom: kDefaultPadding),
+        margin: const EdgeInsets.only(bottom: kDefaultPadding),
         child: Stack(
           alignment: Alignment.topRight,
           children: [
@@ -77,8 +77,8 @@ class _HomeScreenState extends State<HomeScreen> {
               fit: BoxFit.fitWidth,
               radius: BorderRadius.circular(kItemPadding),
             ),
-            Padding(
-              padding: const EdgeInsets.all(kDefaultPadding),
+            const Padding(
+              padding: EdgeInsets.all(kDefaultPadding),
               child: Icon(
                 Icons.favorite,
                 color: Colors.red,
@@ -94,11 +94,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     name,
                     style: TextStyles.defaultStyle.whiteTextColor.bold,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: kItemPadding,
                   ),
                   Container(
-                    padding: EdgeInsets.all(kMinPadding),
+                    padding: const EdgeInsets.all(kMinPadding),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(kMinPadding),
                       color: Colors.white.withOpacity(0.4),
@@ -140,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('Hi James!', style: TextStyles.defaultStyle.fontHeader.whiteTextColor.bold),
-                SizedBox(
+                const SizedBox(
                   height: kMediumPadding,
                 ),
                 Text(
@@ -149,13 +149,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 )
               ],
             ),
-            Spacer(),
-            Icon(
+            const Spacer(),
+            const Icon(
               FontAwesomeIcons.bell,
               size: kDefaultIconSize,
               color: Colors.white,
             ),
-            SizedBox(
+            const SizedBox(
               width: kMinPadding,
             ),
             Container(
@@ -167,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 color: Colors.white,
               ),
-              padding: EdgeInsets.all(kItemPadding),
+              padding: const EdgeInsets.all(kItemPadding),
               child: ImageHelper.loadFromAsset(
                 AssetHelper.person,
               ),
@@ -181,10 +181,10 @@ class _HomeScreenState extends State<HomeScreen> {
           TextField(
             enabled: true,
             autocorrect: false,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               hintText: 'Search your destination',
               prefixIcon: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0),
                 child: Icon(
                   FontAwesomeIcons.magnifyingGlass,
                   color: Colors.black,
@@ -201,13 +201,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ),
-              contentPadding: const EdgeInsets.symmetric(horizontal: kItemPadding),
+              contentPadding: EdgeInsets.symmetric(horizontal: kItemPadding),
             ),
             style: TextStyles.defaultStyle,
             onChanged: (value) {},
             onSubmitted: (String submitValue) {},
           ),
-          SizedBox(
+          const SizedBox(
             height: kDefaultPadding,
           ),
           Row(
@@ -219,14 +219,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: kDefaultIconSize,
                       height: kDefaultIconSize,
                     ),
-                    Color(0xffFE9C5E),
+                    const Color(0xffFE9C5E),
                         () {
                       Navigator.of(context).pushNamed(HotelBookingScreen.routeName);
                     },
                     'Hotels'
                 ),
               ),
-              SizedBox(width: kDefaultPadding),
+              const SizedBox(width: kDefaultPadding),
               Expanded(
                 child: _buildItemCategory(
                     ImageHelper.loadFromAsset(
@@ -234,27 +234,27 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: kDefaultIconSize,
                       height: kDefaultIconSize,
                     ),
-                    Color(0xffF77777),
+                    const Color(0xffF77777),
                         () {},
                     'Flights'
                 ),
               ),
-              SizedBox(width: kDefaultPadding),
+              const SizedBox(width: kDefaultPadding),
               Expanded(
                 child: _buildItemCategory(
                     ImageHelper.loadFromAsset(
-                      AssetHelper.planeandhotelicon,
+                      AssetHelper.planeAndHotelIcon,
                       width: kDefaultIconSize,
                       height: kDefaultIconSize,
                     ),
-                    Color(0xff3EC8BC),
+                    const Color(0xff3EC8BC),
                         () {},
                     'All'
                 ),
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: kMediumPadding,
           ),
           Row(
@@ -263,14 +263,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 'Popular Destinations',
                 style: TextStyles.defaultStyle.bold,
               ),
-              Spacer(),
+              const Spacer(),
               Text(
                 'See All',
                 style: TextStyles.defaultStyle.bold.primaryTextColor,
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: kMediumPadding,
           ),
           Expanded(
@@ -289,7 +289,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           .toList(),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: kDefaultPadding,
                   ),
                   Expanded(

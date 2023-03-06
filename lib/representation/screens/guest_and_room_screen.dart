@@ -38,7 +38,7 @@ class _GuestAndRoomBookingScreenState extends State<GuestAndRoomBookingScreen> {
             ),
             ItemAddGuestAndRoom(
               key: _itemCountRoom,
-              icon: AssetHelper.redcar,
+              icon: AssetHelper.redCar,
               initdata: 1,
               title: "Room",
             ),
